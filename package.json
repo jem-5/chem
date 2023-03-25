@@ -2,7 +2,7 @@
   "name": "photo-tagger",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://jenn-codes.github.io/chemical-elements",
+  "homepage": "http://jem-5.github.io/chem",
   "dependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
