@@ -16,16 +16,16 @@ function App() {
         <Routes>
           <Route
             exact
-            path="/easy-chemistry"
+            path="/chem/easy-chemistry"
             element={<Chemistry difficulty={easy} />}
           />
           <Route
             exact
-            path="/hard-chemistry"
+            path="/chem/hard-chemistry"
             element={<Chemistry difficulty={hard} />}
           />
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/leaderboard" element={<Leaderboard />} />
+          <Route exact path="/chem/" element={<Home />} />
+          <Route exact path="/chem/leaderboard" element={<Leaderboard />} />
         </Routes>
       </BrowserRouter>
     </div>

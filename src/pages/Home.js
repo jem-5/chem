@@ -8,10 +8,10 @@ const Home = () => {
       <h1>CHEMICAL ELEMENT SEARCH</h1>
       <span className="directions">Pick a level:</span>
       <div className="home-level">
-        <Link to={"/easy-chemistry"}>
+        <Link to={"/chem/easy-chemistry"}>
           <div className="level-item">Easy</div>
         </Link>
-        <Link to={"/hard-chemistry"}>
+        <Link to={"/chem/hard-chemistry"}>
           <div className="level-item">Hard</div>
         </Link>
       </div>

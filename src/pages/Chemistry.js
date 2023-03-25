@@ -114,7 +114,7 @@ const Chemistry = ({ difficulty }) => {
       Name: userName,
     };
     db.collection("high-scores").add(newHigh);
-    navigate("/leaderboard");
+    navigate("/chem/leaderboard");
   };
 
   const secondsToMinutes = (seconds) =>
