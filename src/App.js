@@ -1,6 +1,6 @@
 import "./App.css";
 import Chemistry from "./pages/Chemistry";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { elementMapEasy } from "./data/ChemistryEasy";
 import { elementMapHard } from "./data/ChemistryHard";
 import Home from "./pages/Home";
@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route
             exact
@@ -27,7 +27,7 @@ function App() {
           <Route exact path="/chem/" element={<Home />} />
           <Route exact path="/chem/leaderboard" element={<Leaderboard />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
