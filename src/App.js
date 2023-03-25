@@ -1,30 +1,35 @@
-import './App.css';
-import Chemistry from './pages/Chemistry';
+import "./App.css";
+import Chemistry from "./pages/Chemistry";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { elementMapEasy } from './data/ChemistryEasy';
-import { elementMapHard } from './data/ChemistryHard';
-import Home from './pages/Home';
-import Leaderboard from './pages/Leaderboard';
-
+import { elementMapEasy } from "./data/ChemistryEasy";
+import { elementMapHard } from "./data/ChemistryHard";
+import Home from "./pages/Home";
+import Leaderboard from "./pages/Leaderboard";
 
 function App() {
-  let easy=elementMapEasy;
-  let hard=elementMapHard;
+  let easy = elementMapEasy;
+  let hard = elementMapHard;
 
   return (
     <div className="App">
-
       <BrowserRouter>
         <Routes>
-          <Route exact path="/chemical-elements/easy-chemistry" element={ <Chemistry difficulty={easy} /> } />
-          <Route exact path="/chemical-elements/hard-chemistry" element={ <Chemistry difficulty={hard} /> } />
-          <Route exact path="/chemical-elements/" element={ <Home/> } />
-          <Route exact path="/chemical-elements/leaderboard" element={ <Leaderboard /> } />
+          <Route
+            exact
+            path="/easy-chemistry"
+            element={<Chemistry difficulty={easy} />}
+          />
+          <Route
+            exact
+            path="/hard-chemistry"
+            element={<Chemistry difficulty={hard} />}
+          />
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/leaderboard" element={<Leaderboard />} />
         </Routes>
-      </BrowserRouter>      
+      </BrowserRouter>
     </div>
   );
 }
-
 
 export default App;
